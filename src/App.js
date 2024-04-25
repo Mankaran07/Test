@@ -8,7 +8,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload. This website is of
-          Learning Saints.. This website is made for testing purposes.
+          Learning Saints.. This website is made for testing purposes. This is
+          made by the Tech team of Learning Saints.
         </p>
         <a
           className="App-link"
