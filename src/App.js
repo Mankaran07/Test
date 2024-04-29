@@ -19,7 +19,7 @@ function App() {
           // style={{ backgroundImage: `url(${heartImage})` }}
         ></div>
       </div>
-      <img src={photo} alt="sir" className="photo" />
+      <img src={photo} alt="sir-name" className="photo" />
       <div className="congratulation-container">
         <h1>Congratulations</h1>
         <h2>{name}</h2>
