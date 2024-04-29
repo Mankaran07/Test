@@ -64,13 +64,14 @@ img {
 @media only screen and (max-width: 767px) {
   .congratulation-container {
     margin-top: 10rem; /* Adjust margin-top for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   img {
-    width: 100%; /* Make the image responsive to fit smaller screens */
+    width: 50%; /* Make the image responsive to fit smaller screens */
     height: auto; /* Maintain aspect ratio of the image */
-    position: static; /* Remove absolute positioning */
-    top: auto; /* Remove top positioning */
-    left: auto; /* Remove left positioning */
   }
 }
