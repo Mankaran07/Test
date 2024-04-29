@@ -1,23 +1,36 @@
-import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
+import photo from "./photo.jpeg";
 
 function App() {
+  const [heart, setHeart] = useState(false);
+  const name = "Ravi Kumar Singh";
+  const role = "VP of Domestic Sales";
+
+  const showHeart = () => {
+    setHeart(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="container">
+      <div className="react-container">
+        <div
+          className={`heart ${heart ? "active" : ""}`} // Apply "active" class if heart state is true
+          // style={{ backgroundImage: `url(${heartImage})` }}
+        ></div>
+      </div>
+      <img src={photo} alt="sir" className="photo" />
+      <div className="congratulation-container">
+        <h1>Congratulations</h1>
+        <h2>{name}</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          We are thrilled to announce your promotion to the position of {role}.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>Congratulations once again!</p>
+        <button className="btn" onClick={showHeart}>
+          Congratulations
+        </button>
+      </div>
     </div>
   );
 }
